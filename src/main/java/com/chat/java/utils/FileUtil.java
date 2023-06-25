@@ -4,7 +4,6 @@ package com.chat.java.utils;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import org.springframework.util.StringUtils;
-import sun.misc.BASE64Encoder;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -65,8 +64,9 @@ public class FileUtil {
      * @return Base64编码
      */
     public static String encode(byte[] image) {
-        BASE64Encoder decoder = new BASE64Encoder();
-        return replaceEnter(decoder.encode(image));
+//        BASE64Encoder decoder = new BASE64Encoder();
+//        return replaceEnter(decoder.encode(image));
+        return "";
     }
 
     /**
